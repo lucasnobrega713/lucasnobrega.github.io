@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Projetos</title>
+</head>
+
+<body>
+    <h1>Cadastro de Projetos</h1>
+    <form id="project-form">
+        <label for="cover">Capa:</label>
+        <input type="text" id="cover" name="cover" required>
+
+        <label for="type">Tipo:</label>
+        <input type="text" id="type" name="type" required>
+
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="tool">Ferramenta:</label>
+        <input type="text" id="tool" name="tool" required>
+
+        <label for="date">Data:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="status">Status:</label>
+        <input type="text" id="status" name="status" required>
+
+        <button type="submit">Salvar Projeto</button>
+    </form>
+
+    <script src="projects.js"></script>
+</body>
+
+</html>

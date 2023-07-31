@@ -1,0 +1,453 @@
+/* Estilos gerais */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1d1d1d;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Estilos do link */
+a {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos da barra de navegação */
+nav {
+    background-color: #1a1a1a;
+    padding: 10px;
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 9999;
+    height: 60px;
+    width: 100%;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease; /* Adicionando a transição para suavizar a mudança de cor */
+}
+
+nav ul li a:hover {
+    color: #c0392b;
+    text-decoration: none;
+}
+
+
+/* Estilos do banner na seção Home */
+#home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a1a1a;
+    color: #fff;
+    background-image: url("imagens/19.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.banner {
+    text-align: center;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.banner h2 {
+    font-size: 1.2rem;
+    color: #888;
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos das seções de conteúdo */
+.content {
+    padding: 40px;
+    border: 0.5px solid #108094;
+}
+
+.content h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilos do Sobre Mim*/
+
+.title-sobre {
+
+    text-align: center;
+}
+
+#sobre-mim p {
+
+    font-size: 1rem;
+}
+
+/* Estilos das habilidades */
+.habilidades-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.habilidade {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    background-color: #252e36;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.habilidade h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.progress-bar {
+    height: 10px;
+    background-color: #c0392b;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-image: linear-gradient(to right, #c0392b, #e74c3c);
+    border-radius: 5px;
+}
+
+.habilidade:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos dos certificados */
+
+.certificado-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+
+#certificados h2{
+    text-align: center;
+}
+
+.certificado {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    background-color: #252e36;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.certificado h3 {
+    font-size: 1.2rem;
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.certificado:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+
+/* Estilos dos projetos */
+
+#projetos h2{
+    text-align: center;
+}
+
+.projeto-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.projeto-card {
+    border: 1px solid #333;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #252e36;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column; /* Adicionando para alinhar o conteúdo */
+    justify-content: space-between; /* Adicionando para alinhar o conteúdo */
+}
+
+.projeto-card h3 {
+    font-size: 1.2rem;
+    margin: 2px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.projeto-card .descricao {
+    margin-top: 10px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.projeto-card a {
+    margin-top: 10px;
+    text-align: center;
+    color: #c0392b;
+    text-decoration: none;
+}
+
+.projeto-card a:hover {
+    text-decoration: none;
+    background-color: #2e3942;
+}
+
+/* Estilos da seção de contato */
+
+#contato {
+    background-image: url("imagens/09.jpeg");
+}
+
+#contato h2 {
+    text-align: center;
+
+}
+
+.contato-info {
+    border: 1px solid #333;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #252e36;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+    background-image: url("imagens/09.jpeg");
+    text-align:center;
+
+
+}
+
+.contato-info p {
+    margin: 5px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+}
+
+.contato-info a {
+    text-decoration: none;
+}
+
+.contato-info:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos da barra de rolagem */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #c0392b;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #1a1a1a;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: center;
+    }
+    
+    nav ul {
+        flex-direction: column;
+    }
+
+    .nav-toggle {
+        display: block;
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        z-index: 10000;
+        cursor: pointer;
+        opacity: 0;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nav-toggle-label {
+        display: block;
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .nav-toggle-label span,
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        display: block;
+        background-color: #fff;
+        height: 2px;
+        width: 25px;
+        border-radius: 2px;
+        position: absolute;
+        transition: transform 0.3s ease;
+    }
+
+    .nav-toggle-label span::before,
+    .nav-toggle-label span::after {
+        content: '';
+        position: absolute;
+    }
+
+    .nav-toggle-label span::before {
+        top: 10px;
+    }
+
+    .nav-toggle-label span::after {
+        top: 20px;
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::before {
+        top: 0;
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle:checked + .nav-toggle-label span::after {
+        top: 0;
+        transform: rotate(-45deg);
+    }
+    
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    nav ul {
+        display: none;
+        background-color: #1a1a1a;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    }
+    
+    nav ul li {
+        margin-bottom: 0;
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    /* Estilos das seções de conteúdo em telas pequenas */
+    .content {
+        padding: 20px;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+    }
+
+    .habilidades-grid {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        grid-gap: 15px;
+    }
+
+    .habilidade {
+        padding: 10px;
+    }
+
+    .habilidade h3 {
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+
+    .progress-bar {
+        height: 8px;
+    }
+
+    .progress {
+        height: 100%;
+    }
+
+    .certificado {
+        padding: 10px;
+    }
+
+    .certificado h3 {
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+
+    .projeto-grid {
+        grid-template-columns: 1fr;
+        grid-gap: 15px;
+    }
+
+    .projeto-card {
+        padding: 8px;
+    }
+
+    .projeto-card h3 {
+        font-size: 1.3rem;
+        margin: 5px 0;
+    }
+
+    .projeto-card .descricao {
+        margin-top: 8px;
+        font-size: 1rem;
+    }
+
+    .projeto-card a {
+        margin-top: 8px;
+    }
+}
+
+.contato-info {
+    padding: 10px;
+}
+
+.contato-info p {
+    margin: 3px 0;
+}
